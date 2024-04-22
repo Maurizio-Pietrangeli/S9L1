@@ -1,0 +1,7 @@
+Dopo avere eseguito due scansioni con nmap sulla macchina Win XP (la prima con Firwall off e la seconda con Firwall on), possiamo notare
+che l'unica differenza che emerge è la presenza della porta 135/tcp aperta dove è attivo il servizio MSRCP.
+MSRPC è un protocollo in uscita attivo che raccoglie gli eventi Windows senza un agente installato sull'host Windows.
+Il protocollo MSRPC usa la specifica Microsoft Distributed Computing Environment/Remote Procedure Call (DCE/RPC) per fornire 
+una raccolta di eventi codificati senza agent.
+
+Nella seconda scansione dove il Firewall è attivo, possiamo notare dal report2, che non è più presenta la porta 135/tcp.
